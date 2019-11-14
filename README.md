@@ -21,7 +21,10 @@ The main entry point to the SDK is `SNCSonectShop` object. To present the Sonect
 ### Simple SDK Integration 
 ```
 SNCShopCredentials *credentials = [[SNCShopCredentials alloc] initWithSdkToken:_SHOP_SDK_TOKEN_
-                                                                     signature:_SHOP_SIGNATURE_];
+								    merchantId:_YOUR_MERCHANT_ID_
+							       	      password:_YOUR_PASSWORD_];
+//Optionally assign a device id if you have multiple devices
+credentials.deviceId = @"YOUR_DEVICE_ID";
 
 //Create a SonectShopConfiguration.plist, alternatively use initWithContentsOfFile:
 SNCShopConfiguration *configuration = [SNCShopConfiguration defaultConfiguration];
