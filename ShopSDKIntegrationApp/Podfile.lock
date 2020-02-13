@@ -1,0 +1,16 @@
+PODS:
+  - sonect-shop-sdk-ios (0.0.15)
+
+DEPENDENCIES:
+  - sonect-shop-sdk-ios
+
+SPEC REPOS:
+  trunk:
+    - sonect-shop-sdk-ios
+
+SPEC CHECKSUMS:
+  sonect-shop-sdk-ios: 227503c28ce477637846bbcd498fdd93f8a9d404
+
+PODFILE CHECKSUM: 60d4f876d91de7bb80b0bde9dd6fe12fc3a63cd9
+
+COCOAPODS: 1.8.4
