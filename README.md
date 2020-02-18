@@ -22,13 +22,16 @@ The main entry point to the SDK is `SNCSonectShop` object. To present the Sonect
 ```
 SNCShopCredentials *credentials = [[SNCShopCredentials alloc] initWithSdkToken:_SHOP_SDK_TOKEN_
 								    merchantId:_YOUR_MERCHANT_ID_
-							       	      password:_YOUR_PASSWORD_];
-//Optionally assign a device id if you have multiple devices
-credentials.deviceId = @"YOUR_DEVICE_ID";
+							       	      deviceId:_YOUR_DEVICE_ID_];
 
 //Create a SonectShopConfiguration.plist, alternatively use initWithContentsOfFile:
 SNCShopConfiguration *configuration = [SNCShopConfiguration defaultConfiguration];
 
+//In order to scan the barcodes, you need to set your preferred scanning plugin, or implement your own. 
+id <SNCScanCodePlugin> scanPlugin = [MyScanCodePlugin new];
+[SNCSonectShop setScanCodePlugin:scanPlugin];
+
+//Present the shop interface on top of your app. 
 [SNCSonectShop presentWithCredentials:credentials
                         configuration:configuration
              presentingViewController:self.viewController];
