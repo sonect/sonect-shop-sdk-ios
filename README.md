@@ -37,6 +37,16 @@ id <SNCScanCodePlugin> scanPlugin = [MyScanCodePlugin new];
              presentingViewController:self.viewController];
 ```
 
+### Barcode scanning
+
+The Sonect Shop SDK allows you to use your barcode scanning SDK, by implementing a simple `SNCScanCodePlugin` protocol, and plugging it in the Sonect Shop SDK.
+```
+id <SNCScanCodePlugin> scanPlugin = [MyScanCodePlugin new];
+[SNCSonectShop setScanCodePlugin:scanPlugin];
+```
+
+Optimally, for best barcode and QR code scanning experience, Sonect has partnered with Scandit, so you can also use the [Scandit Plugin](https://github.com/sonect/sonect-scandit-scan-plugin). Sonect will provide additional details for integration.
+
 ### Configuration file
 
 In order to configure the SDK, create a `SonectShopConfiguration.plist` file, and fill out the mandatory fields. You can load the configuration by using the `SNCShopConfiguration` object. A sample plist file might look like this, for more info consult the `SNCShopConfiguration` interface documentation. 
