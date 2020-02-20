@@ -22,7 +22,7 @@ The main entry point to the SDK is `SNCSonectShop` object. To present the Sonect
 ## Obj-C
 
 ### Simple SDK Integration 
-```
+```objc
 SNCShopCredentials *credentials = [[SNCShopCredentials alloc] initWithSdkToken:_SHOP_SDK_TOKEN_
 								    merchantId:_YOUR_MERCHANT_ID_
 							       	      deviceId:_YOUR_DEVICE_ID_];
@@ -43,7 +43,7 @@ id <SNCScanCodePlugin> scanPlugin = [MyScanCodePlugin new];
 ### Barcode scanning
 
 The Sonect Shop SDK allows you to use your barcode scanning SDK, by implementing a simple `SNCScanCodePlugin` protocol, and plugging it in the Sonect Shop SDK.
-```
+```objc
 id <SNCScanCodePlugin> scanPlugin = [MyScanCodePlugin new];
 [SNCSonectShop setScanCodePlugin:scanPlugin];
 ```
@@ -55,7 +55,7 @@ Optimally, for best barcode and QR code scanning experience, Sonect has partnere
 In order to configure the SDK, create a `SonectShopConfiguration.plist` file, and fill out the mandatory fields. You can load the configuration by using the `SNCShopConfiguration` object. A sample plist file might look like this, for more info consult the `SNCShopConfiguration` interface documentation. 
 
 Sample `SonectShopConfiguration.plist` values: 
-```
+```xml
 <dict>
 	<key>SonectAlpha2CountryCode</key>
 	<string>ch</string>
