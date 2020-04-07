@@ -32,7 +32,11 @@ SNCShopConfiguration *configuration = [SNCShopConfiguration defaultConfiguration
 
 //In order to scan the barcodes, you need to set your preferred scanning plugin, or implement your own. 
 id <SNCScanCodePlugin> scanPlugin = [MyScanCodePlugin new];
-[SNCSonectShop setScanCodePlugin:scanPlugin];
+SNCSonectShop.scanCodePlugin = scanPlugin;
+
+//In order to check user's KYC, use a KYC plugin or implement your own.  
+id <SNCKycProviderPlugin> kycPlugin = [MyKycProviderPlugin new];
+SNCSonectShop.kycProviderPlugin = kycPlugin;
 
 //Present the shop interface on top of your app. 
 [SNCSonectShop presentWithCredentials:credentials
@@ -49,6 +53,10 @@ id <SNCScanCodePlugin> scanPlugin = [MyScanCodePlugin new];
 ```
 
 Optimally, for best barcode and QR code scanning experience, Sonect has partnered with Scandit, so you can also use the [Scandit Plugin](https://github.com/sonect/sonect-scandit-scan-plugin). Sonect will provide additional details for integration.
+
+### KYC Check
+
+The Sonect Shop SDK allows you to use Idenfy as the KYC check provider. Integrate the [Idenfy KYC Plugin](https://github.com/sonect/sonect-idenfy-kyc-plugin) as described in the repository README page to get the benefits of Idenfy scanning. Sonect will provide additional details for integration.
 
 ### Configuration file
 
