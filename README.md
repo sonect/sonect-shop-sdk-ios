@@ -58,6 +58,15 @@ Optimally, for best barcode and QR code scanning experience, Sonect has partnere
 
 The Sonect Shop SDK allows you to use Idenfy as the KYC check provider. Integrate the [Idenfy KYC Plugin](https://github.com/sonect/sonect-idenfy-kyc-plugin) as described in the repository README page to get the benefits of Idenfy scanning. Sonect will provide additional details for integration.
 
+### Adress Autocompletion
+
+With Sonect Shop SDK allows you can use Google autocompletion as the default address autocompletion plugin. Integrate the [Sonect Google Address Autocompletion Plugin](https://github.com/sonect/sonect-google-address-autocompletion-plugin) as described in the repository README page. If your company does not allow the usage of Google API-s you can roll your own autocomplete solution by implementing the `SNCAddressAutocompletionPlugin` protocol, and assigning it to the Sonect Shop SDK like so 
+
+```objc
+id <SNCAddressAutocompletionPlugin> plugin = [MyAddressAutocompletionPlugin new];
+SNCSonectShop.addressAutocompletionPlugin = plugin;
+```
+
 ### Configuration file
 
 In order to configure the SDK, create a `SonectShopConfiguration.plist` file, and fill out the mandatory fields. You can load the configuration by using the `SNCShopConfiguration` object. A sample plist file might look like this, for more info consult the `SNCShopConfiguration` interface documentation. 
