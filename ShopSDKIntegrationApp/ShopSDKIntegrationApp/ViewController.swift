@@ -25,14 +25,13 @@ class ScanPlugin: NSObject, SNCScanCodePlugin {
 class ViewController: UIViewController {
 
     @IBAction func openSdk(_ sender: Any) {
-        let configuration = SNCConfiguration.default()
-        
-        // TODO: Obtain an SDK token from a web service
-        let sdkToken = "_SDK_TOKEN_"
-        let credentials = SNCShopCredentials(sdkToken: sdkToken)
+        let configuration = SNCShopConfiguration.default()
+        let credentials = SNCShopCredentials(sdkToken: "_SDK_TOKEN_",
+                                             merchantId: "_MERCHANT_ID_",
+                                             signature: "_SIGNATURE_",
+                                             deviceId: "_DEVICE_ID_")
         let scanPlugin = ScanPlugin()
         SNCSonectShop.scanCodePlugin = scanPlugin
         SNCSonectShop.present(with: credentials, configuration: configuration, presenting: self)
     }
 }
-
