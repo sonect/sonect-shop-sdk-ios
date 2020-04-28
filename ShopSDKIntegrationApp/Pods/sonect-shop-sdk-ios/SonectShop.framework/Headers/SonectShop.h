@@ -16,9 +16,18 @@ FOUNDATION_EXPORT const unsigned char SonectShopVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SonectShop/PublicHeader.h>
 
-#import <SonectShop/SNCConfiguration.h>
+#import <SonectShop/SNCShopConfiguration.h>
 #import <SonectShop/SNCShopCredentials.h>
-#import <SonectShop/SNCScanCodePlugin.h>
 #import <SonectShop/SNCSonectShop.h>
 #import <SonectShop/SNCTheme.h>
 #import <SonectShop/SNCToken.h>
+
+// Plugins
+#import <SonectShop/SNCScanCodePlugin.h>
+#import <SonectShop/SNCKycProviderPlugin.h>
+#import <SonectShop/SNCAddressAutocompletionPlugin.h>
+
+// Data source
+#import <SonectShop/SNCShopOnboardingDataSource.h>
+#import <SonectShop/SNCShopAddress.h>
+#import <SonectShop/SNCOpeningHours.h>

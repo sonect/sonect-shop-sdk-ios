@@ -1,16 +1,24 @@
 PODS:
-  - sonect-shop-sdk-ios (0.0.15)
+  - sonect-google-address-autocompletion-plugin (1.0.4)
+  - sonect-scandit-scan-plugin (1.0.2)
+  - sonect-shop-sdk-ios (0.9.0)
 
 DEPENDENCIES:
+  - sonect-google-address-autocompletion-plugin
+  - sonect-scandit-scan-plugin
   - sonect-shop-sdk-ios
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
+    - sonect-google-address-autocompletion-plugin
+    - sonect-scandit-scan-plugin
     - sonect-shop-sdk-ios
 
 SPEC CHECKSUMS:
-  sonect-shop-sdk-ios: 227503c28ce477637846bbcd498fdd93f8a9d404
+  sonect-google-address-autocompletion-plugin: 0092c9e3e2e83734f30cbdcb59e3379f31605d2e
+  sonect-scandit-scan-plugin: 81b3bba6b67756d3ddce9df385fb78baf55cf675
+  sonect-shop-sdk-ios: b30f35f0c9225cc07a0cf8ffa5249884109684cf
 
-PODFILE CHECKSUM: 60d4f876d91de7bb80b0bde9dd6fe12fc3a63cd9
+PODFILE CHECKSUM: 19947e98769f2d41a36260cbc8aed4995eddd5d1
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

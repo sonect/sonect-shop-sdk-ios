@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -16,57 +16,116 @@
 			);
 			name = "sonect-shop-sdk-ios";
 		};
+		A97B4397681D01504BD571BCEEA352C4 /* sonect-scandit-scan-plugin */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 06BD0D6EFB8E909A16A95AE6340CDDCB /* Build configuration list for PBXAggregateTarget "sonect-scandit-scan-plugin" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "sonect-scandit-scan-plugin";
+		};
+		C290593267C3A42641319BB16DEBC737 /* sonect-google-address-autocompletion-plugin */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FE80CEC0CE8E9F65E2730073756C05C6 /* Build configuration list for PBXAggregateTarget "sonect-google-address-autocompletion-plugin" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "sonect-google-address-autocompletion-plugin";
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		2F63A5AE04AD8EC3679D2D9B15D311A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		4C24B2D832C1D2B10F22B6369EA80BAB /* Pods-ShopSDKIntegrationApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 289CD0ED3C3412DFF002E017DA37ACE2 /* Pods-ShopSDKIntegrationApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B156AD20C7C866573C0F1FCD4087199C /* Pods-ShopSDKIntegrationApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD37BF5F653F4558A2BB3C36207EBC8F /* Pods-ShopSDKIntegrationApp-dummy.m */; };
+		771A8507A12A956C10CB720660D77A82 /* Pods-ShopSDKIntegrationApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 289CD0ED3C3412DFF002E017DA37ACE2 /* Pods-ShopSDKIntegrationApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D13BB69B6E92B710AB52852E76E0B18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		ADDF7485F45E4F27CAEE9177E519FAEC /* Pods-ShopSDKIntegrationApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD37BF5F653F4558A2BB3C36207EBC8F /* Pods-ShopSDKIntegrationApp-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8D2D391353C7EFD6CA34B8C4A87F48AB /* PBXContainerItemProxy */ = {
+		6F8792C7A363F4A1CF730F29BA77E8A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0EC587CF615156B5AAA458C3E5404B39;
 			remoteInfo = "sonect-shop-sdk-ios";
 		};
+		AC755CBA49DBA42418CF675D312BC689 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C290593267C3A42641319BB16DEBC737;
+			remoteInfo = "sonect-google-address-autocompletion-plugin";
+		};
+		FB963856658BA4A91A0F4D02F6A435DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A97B4397681D01504BD571BCEEA352C4;
+			remoteInfo = "sonect-scandit-scan-plugin";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		035543CA7FA10251AB4D415F13317D1F /* Pods_ShopSDKIntegrationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ShopSDKIntegrationApp.framework; path = "Pods-ShopSDKIntegrationApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D7C20478B4DFBC1FAA607FCBDD43C60 /* sonect-shop-sdk-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "sonect-shop-sdk-ios.xcconfig"; sourceTree = "<group>"; };
+		1BCCBAAB526E8AD5D2BB5D863E0DBD3C /* sonect-google-address-autocompletion-plugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "sonect-google-address-autocompletion-plugin.debug.xcconfig"; sourceTree = "<group>"; };
 		289CD0ED3C3412DFF002E017DA37ACE2 /* Pods-ShopSDKIntegrationApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShopSDKIntegrationApp-umbrella.h"; sourceTree = "<group>"; };
 		2C589FE762AB29997DB212FC1597916D /* Pods-ShopSDKIntegrationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShopSDKIntegrationApp.debug.xcconfig"; sourceTree = "<group>"; };
 		2D10D7797C3291D906B9F314B24C8A25 /* Pods-ShopSDKIntegrationApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShopSDKIntegrationApp.modulemap"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		41A5914E1CEAA4E905F75E07AA941083 /* SonectShop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SonectShop.framework; sourceTree = "<group>"; };
 		4749BE60EF8D83A295823BB460E6D673 /* Pods-ShopSDKIntegrationApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShopSDKIntegrationApp-frameworks.sh"; sourceTree = "<group>"; };
 		496BD38A58B09B70BF144D16A924D631 /* Pods-ShopSDKIntegrationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShopSDKIntegrationApp.release.xcconfig"; sourceTree = "<group>"; };
+		4DE94F3215E00C73E674D686CF8EC2D3 /* sonect-shop-sdk-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "sonect-shop-sdk-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		572C25ACD4133E3DF5E8431B3B3560C7 /* Pods-ShopSDKIntegrationApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShopSDKIntegrationApp-Info.plist"; sourceTree = "<group>"; };
+		5F14C580FA590EAB105DBE1976C00314 /* sonect-scandit-scan-plugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "sonect-scandit-scan-plugin.debug.xcconfig"; sourceTree = "<group>"; };
+		67A23E64E7AF2E5B40A1AC1E0E277A2B /* sonect-google-address-autocompletion-plugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "sonect-google-address-autocompletion-plugin.release.xcconfig"; sourceTree = "<group>"; };
 		784C3DDC5938C48285A777750FBBDDAF /* Pods-ShopSDKIntegrationApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShopSDKIntegrationApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AD44F35869816163D3A90A87D2AE5C7E /* SonectShop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SonectShop.framework; sourceTree = "<group>"; };
+		AE2517C81F99273753F8F2B14C096C08 /* ScanditScanPlugin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScanditScanPlugin.framework; sourceTree = "<group>"; };
 		B28772E00A6623785C6C9034504CBB30 /* Pods-ShopSDKIntegrationApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShopSDKIntegrationApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		BA21312D2456AC0B60D2A7C399382C46 /* sonect-scandit-scan-plugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "sonect-scandit-scan-plugin.release.xcconfig"; sourceTree = "<group>"; };
+		D29E78C9F62C08B5CBBBDF5A6B81FBFA /* GoogleAddressAutocompletionPlugin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAddressAutocompletionPlugin.framework; sourceTree = "<group>"; };
 		DD37BF5F653F4558A2BB3C36207EBC8F /* Pods-ShopSDKIntegrationApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShopSDKIntegrationApp-dummy.m"; sourceTree = "<group>"; };
+		F157A527A86694A59FA7D81DD315A93A /* sonect-shop-sdk-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "sonect-shop-sdk-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		06737F363210E5885444CE4465B42A23 /* Frameworks */ = {
+		308EA402272ECAEBF6E170DB5C984674 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F63A5AE04AD8EC3679D2D9B15D311A3 /* Foundation.framework in Frameworks */,
+				8D13BB69B6E92B710AB52852E76E0B18 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		47981D395C109673ED2C7366E83AF847 /* Frameworks */ = {
+		119C1E3DB3CB0855463F261472E4673E /* sonect-shop-sdk-ios */ = {
 			isa = PBXGroup;
 			children = (
-				AD44F35869816163D3A90A87D2AE5C7E /* SonectShop.framework */,
+				80D0E9E5B522857951B9779CB7CA7E90 /* Frameworks */,
+				833066B113CDFDA587B44B08C56DED58 /* Support Files */,
+			);
+			name = "sonect-shop-sdk-ios";
+			path = "sonect-shop-sdk-ios";
+			sourceTree = "<group>";
+		};
+		23827AE44D4B59AC9639330B2C526B0C /* sonect-scandit-scan-plugin */ = {
+			isa = PBXGroup;
+			children = (
+				549CF503DBA5D3288E52D236B4CF03E6 /* Frameworks */,
+				F424FF77D0FF26C378B2263F2DFE2F42 /* Support Files */,
+			);
+			name = "sonect-scandit-scan-plugin";
+			path = "sonect-scandit-scan-plugin";
+			sourceTree = "<group>";
+		};
+		549CF503DBA5D3288E52D236B4CF03E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE2517C81F99273753F8F2B14C096C08 /* ScanditScanPlugin.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -77,23 +136,6 @@
 				71111819F81067F025D7ECDD71C655F6 /* Pods-ShopSDKIntegrationApp */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		6DB5E82A06326DF58A8BC37DD55F41ED /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0D7C20478B4DFBC1FAA607FCBDD43C60 /* sonect-shop-sdk-ios.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/sonect-shop-sdk-ios";
-			sourceTree = "<group>";
-		};
-		6EF043A84F7ECFFE38CA928AB85BC26D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7AAFB9866111ACB9346F7834BCB345C0 /* sonect-shop-sdk-ios */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		71111819F81067F025D7ECDD71C655F6 /* Pods-ShopSDKIntegrationApp */ = {
@@ -121,14 +163,60 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7AAFB9866111ACB9346F7834BCB345C0 /* sonect-shop-sdk-ios */ = {
+		80D0E9E5B522857951B9779CB7CA7E90 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				47981D395C109673ED2C7366E83AF847 /* Frameworks */,
-				6DB5E82A06326DF58A8BC37DD55F41ED /* Support Files */,
+				41A5914E1CEAA4E905F75E07AA941083 /* SonectShop.framework */,
 			);
-			name = "sonect-shop-sdk-ios";
-			path = "sonect-shop-sdk-ios";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		833066B113CDFDA587B44B08C56DED58 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DE94F3215E00C73E674D686CF8EC2D3 /* sonect-shop-sdk-ios.debug.xcconfig */,
+				F157A527A86694A59FA7D81DD315A93A /* sonect-shop-sdk-ios.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/sonect-shop-sdk-ios";
+			sourceTree = "<group>";
+		};
+		99B8DE6C2862DCD9B30A30FC7C4228A3 /* sonect-google-address-autocompletion-plugin */ = {
+			isa = PBXGroup;
+			children = (
+				B12C01E2F6F8D6FC5FA8F7B485774F81 /* Frameworks */,
+				9CA1FEA990FC977998F28E775B65167A /* Support Files */,
+			);
+			name = "sonect-google-address-autocompletion-plugin";
+			path = "sonect-google-address-autocompletion-plugin";
+			sourceTree = "<group>";
+		};
+		9CA1FEA990FC977998F28E775B65167A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BCCBAAB526E8AD5D2BB5D863E0DBD3C /* sonect-google-address-autocompletion-plugin.debug.xcconfig */,
+				67A23E64E7AF2E5B40A1AC1E0E277A2B /* sonect-google-address-autocompletion-plugin.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/sonect-google-address-autocompletion-plugin";
+			sourceTree = "<group>";
+		};
+		AEBA316A210EDA3229FF143A080B3A61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99B8DE6C2862DCD9B30A30FC7C4228A3 /* sonect-google-address-autocompletion-plugin */,
+				23827AE44D4B59AC9639330B2C526B0C /* sonect-scandit-scan-plugin */,
+				119C1E3DB3CB0855463F261472E4673E /* sonect-shop-sdk-ios */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B12C01E2F6F8D6FC5FA8F7B485774F81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D29E78C9F62C08B5CBBBDF5A6B81FBFA /* GoogleAddressAutocompletionPlugin.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -144,7 +232,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				6EF043A84F7ECFFE38CA928AB85BC26D /* Pods */,
+				AEBA316A210EDA3229FF143A080B3A61 /* Pods */,
 				73882C7796A10110100A69C5F0B21037 /* Products */,
 				585C60608B1B19E8667CBD05CB76F39E /* Targets Support Files */,
 			);
@@ -158,14 +246,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F424FF77D0FF26C378B2263F2DFE2F42 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F14C580FA590EAB105DBE1976C00314 /* sonect-scandit-scan-plugin.debug.xcconfig */,
+				BA21312D2456AC0B60D2A7C399382C46 /* sonect-scandit-scan-plugin.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/sonect-scandit-scan-plugin";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B12D35029BD86B00CCF0A0FF3C6FBFE3 /* Headers */ = {
+		705DBA230B4AACB21CD918AF3AE99B54 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C24B2D832C1D2B10F22B6369EA80BAB /* Pods-ShopSDKIntegrationApp-umbrella.h in Headers */,
+				771A8507A12A956C10CB720660D77A82 /* Pods-ShopSDKIntegrationApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,17 +272,19 @@
 /* Begin PBXNativeTarget section */
 		997F98043B69179FFDC750E23552615A /* Pods-ShopSDKIntegrationApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D966ED5F0F15C43C464F3CE75282DB56 /* Build configuration list for PBXNativeTarget "Pods-ShopSDKIntegrationApp" */;
+			buildConfigurationList = 7505CC6123C7FE9DD353D0D66B7A0C3D /* Build configuration list for PBXNativeTarget "Pods-ShopSDKIntegrationApp" */;
 			buildPhases = (
-				B12D35029BD86B00CCF0A0FF3C6FBFE3 /* Headers */,
-				26C8ACB99F130D9C42ED5BC4EDD89619 /* Sources */,
-				06737F363210E5885444CE4465B42A23 /* Frameworks */,
-				F42DDE8602E85A8D7A93819E0ACF81E1 /* Resources */,
+				705DBA230B4AACB21CD918AF3AE99B54 /* Headers */,
+				FFD3A4B3F83776E5322BC9E51CE9A92C /* Sources */,
+				308EA402272ECAEBF6E170DB5C984674 /* Frameworks */,
+				DA9CB4820ECD702CC5F2465588AAF195 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				67638FE7ADF132933002C3F7FF1942DD /* PBXTargetDependency */,
+				2C95D905AE4A0B6560B62A79B0FB9F2D /* PBXTargetDependency */,
+				4950BA5EB3334591A21876C1D79B6DB4 /* PBXTargetDependency */,
+				8D290E8D307040196F77DC91F573C727 /* PBXTargetDependency */,
 			);
 			name = "Pods-ShopSDKIntegrationApp";
 			productName = "Pods-ShopSDKIntegrationApp";
@@ -201,7 +301,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -214,13 +314,15 @@
 			projectRoot = "";
 			targets = (
 				997F98043B69179FFDC750E23552615A /* Pods-ShopSDKIntegrationApp */,
+				C290593267C3A42641319BB16DEBC737 /* sonect-google-address-autocompletion-plugin */,
+				A97B4397681D01504BD571BCEEA352C4 /* sonect-scandit-scan-plugin */,
 				0EC587CF615156B5AAA458C3E5404B39 /* sonect-shop-sdk-ios */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F42DDE8602E85A8D7A93819E0ACF81E1 /* Resources */ = {
+		DA9CB4820ECD702CC5F2465588AAF195 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -230,47 +332,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		26C8ACB99F130D9C42ED5BC4EDD89619 /* Sources */ = {
+		FFD3A4B3F83776E5322BC9E51CE9A92C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B156AD20C7C866573C0F1FCD4087199C /* Pods-ShopSDKIntegrationApp-dummy.m in Sources */,
+				ADDF7485F45E4F27CAEE9177E519FAEC /* Pods-ShopSDKIntegrationApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		67638FE7ADF132933002C3F7FF1942DD /* PBXTargetDependency */ = {
+		2C95D905AE4A0B6560B62A79B0FB9F2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "sonect-google-address-autocompletion-plugin";
+			target = C290593267C3A42641319BB16DEBC737 /* sonect-google-address-autocompletion-plugin */;
+			targetProxy = AC755CBA49DBA42418CF675D312BC689 /* PBXContainerItemProxy */;
+		};
+		4950BA5EB3334591A21876C1D79B6DB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "sonect-scandit-scan-plugin";
+			target = A97B4397681D01504BD571BCEEA352C4 /* sonect-scandit-scan-plugin */;
+			targetProxy = FB963856658BA4A91A0F4D02F6A435DD /* PBXContainerItemProxy */;
+		};
+		8D290E8D307040196F77DC91F573C727 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "sonect-shop-sdk-ios";
 			target = 0EC587CF615156B5AAA458C3E5404B39 /* sonect-shop-sdk-ios */;
-			targetProxy = 8D2D391353C7EFD6CA34B8C4A87F48AB /* PBXContainerItemProxy */;
+			targetProxy = 6F8792C7A363F4A1CF730F29BA77E8A7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2D5726A38D057CB550330196E518DA55 /* Release */ = {
+		1642553656C659030BAB249175315D37 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D7C20478B4DFBC1FAA607FCBDD43C60 /* sonect-shop-sdk-ios.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		35BFAD106411313D3141CE5F9C6539E9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C589FE762AB29997DB212FC1597916D /* Pods-ShopSDKIntegrationApp.debug.xcconfig */;
+			baseConfigurationReference = 496BD38A58B09B70BF144D16A924D631 /* Pods-ShopSDKIntegrationApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -301,10 +397,98 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
+			name = Release;
+		};
+		2C12B9B94417104BC62C3D101D0E584D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DE94F3215E00C73E674D686CF8EC2D3 /* sonect-shop-sdk-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
 			name = Debug;
+		};
+		5545463ED8F94E2028C7308C79B0568C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BCCBAAB526E8AD5D2BB5D863E0DBD3C /* sonect-google-address-autocompletion-plugin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6096AB5DCE43767E587735207641A0D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA21312D2456AC0B60D2A7C399382C46 /* sonect-scandit-scan-plugin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65C5F97262EFCE7BC8C697C52ECA6D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F14C580FA590EAB105DBE1976C00314 /* sonect-scandit-scan-plugin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		924AB30F093E10D28ED551017FBCCB0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F157A527A86694A59FA7D81DD315A93A /* sonect-shop-sdk-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -370,9 +554,27 @@
 			};
 			name = Debug;
 		};
-		AA1BC9C82B100A3805F0E9CC4D81226B /* Release */ = {
+		A78EB1900181547DCB9AC086ABA21AFF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 496BD38A58B09B70BF144D16A924D631 /* Pods-ShopSDKIntegrationApp.release.xcconfig */;
+			baseConfigurationReference = 67A23E64E7AF2E5B40A1AC1E0E277A2B /* sonect-google-address-autocompletion-plugin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF462EDF256195011A53B6F73A99509E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C589FE762AB29997DB212FC1597916D /* Pods-ShopSDKIntegrationApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -403,11 +605,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -469,31 +670,23 @@
 			};
 			name = Release;
 		};
-		FDA8C933A68005B2DD27102AC4C6FB30 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D7C20478B4DFBC1FAA607FCBDD43C60 /* sonect-shop-sdk-ios.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		06BD0D6EFB8E909A16A95AE6340CDDCB /* Build configuration list for PBXAggregateTarget "sonect-scandit-scan-plugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65C5F97262EFCE7BC8C697C52ECA6D81 /* Debug */,
+				6096AB5DCE43767E587735207641A0D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2E0AE43A124E88F89B8CD3F276CDBC7E /* Build configuration list for PBXAggregateTarget "sonect-shop-sdk-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDA8C933A68005B2DD27102AC4C6FB30 /* Debug */,
-				2D5726A38D057CB550330196E518DA55 /* Release */,
+				2C12B9B94417104BC62C3D101D0E584D /* Debug */,
+				924AB30F093E10D28ED551017FBCCB0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -507,11 +700,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D966ED5F0F15C43C464F3CE75282DB56 /* Build configuration list for PBXNativeTarget "Pods-ShopSDKIntegrationApp" */ = {
+		7505CC6123C7FE9DD353D0D66B7A0C3D /* Build configuration list for PBXNativeTarget "Pods-ShopSDKIntegrationApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				35BFAD106411313D3141CE5F9C6539E9 /* Debug */,
-				AA1BC9C82B100A3805F0E9CC4D81226B /* Release */,
+				DF462EDF256195011A53B6F73A99509E /* Debug */,
+				1642553656C659030BAB249175315D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE80CEC0CE8E9F65E2730073756C05C6 /* Build configuration list for PBXAggregateTarget "sonect-google-address-autocompletion-plugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5545463ED8F94E2028C7308C79B0568C /* Debug */,
+				A78EB1900181547DCB9AC086ABA21AFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
