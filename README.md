@@ -9,7 +9,7 @@ Contact support@sonect.ch if additional info is needed.
 ## Installation: 
 
 Via dependency managers:
-- Cocoapods: `pod 'sonect-shop-sdk-ios'`
+- Cocoapods: `pod 'sonect-shop-sdk-ios'` [Installation guide](https://github.com/sonect/sonect-shop-sdk-ios/blob/master/install_with_cocoapods.md)
 - Carthage: `github "sonect/sonect-shop-sdk-ios"`
 - Manual
 
