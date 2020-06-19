@@ -17,6 +17,8 @@ and run `pod update`
 Unzip the `External.zip` file and place the directory inside your project folder, 
 then add the External directory to your Xcode project. 
 
+![](https://github.com/sonect/sonect-shop-sdk-ios/blob/master/misc/external.png)
+
 Next go to `Build Phases` in Xcode, and add the following libraries to 
 `Link Binary With Libraries`
 
@@ -27,5 +29,7 @@ MediaPlayer.framework
 libc++.tbd
 ScanditBarcodeScanner.framework
 ```
+
+![](https://github.com/sonect/sonect-shop-sdk-ios/blob/master/misc/link_binaries.png)
 
 Build. 
