@@ -15,7 +15,7 @@ Via dependency managers:
 
 Sonect Shop SDK is written from ground up in Objective - C, and doesn’t have any external dependencies, so that it plays well with older code bases. 
 
-Minimum version: iOS 10.0+ 
+Minimum version: iOS 9.0+ 
 
 The main entry point to the SDK is `SNCSonectShop` object. To present the Sonect view controller, you have to obtain the SDK token, the user ID and the signature, which **must** be calculated on your bank's serverside for security reasons.  
 
