@@ -8,6 +8,7 @@ In your `Podfile` add the following pods:
 ```
 pod 'sonect-shop-sdk-ios'
 pod 'sonect-scandit-scan-plugin'
+pod 'sonect-idenfy-kyc-plugin'
 pod 'sonect-google-address-autocompletion-plugin'
 pod 'iDenfySDK/iDenfyLiveness'
 ```
