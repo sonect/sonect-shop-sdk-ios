@@ -1,3 +1,0 @@
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAddressAutocompletionPlugin.framework
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScanditScanPlugin.framework
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SonectShop.framework

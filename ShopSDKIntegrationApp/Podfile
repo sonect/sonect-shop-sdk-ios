@@ -10,5 +10,6 @@ target 'ShopSDKIntegrationApp' do
   pod 'sonect-shop-sdk-ios'
   pod 'sonect-scandit-scan-plugin'
   pod 'sonect-google-address-autocompletion-plugin'
+  pod 'sonect-idenfy-kyc-plugin'
 
 end

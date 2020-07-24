@@ -1,24 +1,72 @@
 PODS:
-  - sonect-google-address-autocompletion-plugin (1.0.4)
-  - sonect-scandit-scan-plugin (1.0.2)
-  - sonect-shop-sdk-ios (0.9.0)
+  - iDenfySDK/iDenfyLiveness (3.3.0):
+    - JGProgressHUD
+    - lottie-ios
+    - MaterialComponents/ActivityIndicator
+    - Pulsator
+    - ZIPFoundation (~> 0.9)
+  - JGProgressHUD (2.1)
+  - lottie-ios (3.1.8)
+  - MaterialComponents/ActivityIndicator (111.0.0):
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Application
+    - MDFInternationalization
+    - MotionAnimator (~> 2.0)
+  - MaterialComponents/Palettes (111.0.0)
+  - MaterialComponents/private/Application (111.0.0)
+  - MDFInternationalization (2.0.0)
+  - MotionAnimator (2.8.1):
+    - MotionInterchange (~> 1.6)
+  - MotionInterchange (1.6.0)
+  - Pulsator (0.6.0)
+  - sonect-core-ios (1.0.3)
+  - sonect-google-address-autocompletion-plugin (1.0.10)
+  - sonect-idenfy-kyc-plugin (1.0.4):
+    - iDenfySDK/iDenfyLiveness
+    - sonect-core-ios
+  - sonect-scandit-scan-plugin (1.0.5)
+  - sonect-shop-sdk-ios (1.3.3)
+  - ZIPFoundation (0.9.11)
 
 DEPENDENCIES:
   - sonect-google-address-autocompletion-plugin
+  - sonect-idenfy-kyc-plugin
   - sonect-scandit-scan-plugin
   - sonect-shop-sdk-ios
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - iDenfySDK
+    - JGProgressHUD
+    - lottie-ios
+    - MaterialComponents
+    - MDFInternationalization
+    - MotionAnimator
+    - MotionInterchange
+    - Pulsator
+    - sonect-core-ios
     - sonect-google-address-autocompletion-plugin
+    - sonect-idenfy-kyc-plugin
     - sonect-scandit-scan-plugin
     - sonect-shop-sdk-ios
+    - ZIPFoundation
 
 SPEC CHECKSUMS:
-  sonect-google-address-autocompletion-plugin: 0092c9e3e2e83734f30cbdcb59e3379f31605d2e
-  sonect-scandit-scan-plugin: 81b3bba6b67756d3ddce9df385fb78baf55cf675
-  sonect-shop-sdk-ios: b30f35f0c9225cc07a0cf8ffa5249884109684cf
+  iDenfySDK: b4d1ac29ba67470fc31dff4d58dbd5ba0dc25977
+  JGProgressHUD: aa403e9a5b45cae98903c4600cccdd98c0c3ec90
+  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
+  MaterialComponents: 533042da998b97ad13a6f544268f8026e8161cc5
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MotionAnimator: ee16aa30567c5bae0fb2750c132915829cfaaf8a
+  MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
+  Pulsator: eb5a9f9be4bdcbd19903984c65deca6aabe50a17
+  sonect-core-ios: 9ba5b8b2344111c90f4cda57b63489947a3ec07d
+  sonect-google-address-autocompletion-plugin: dc68ed648ca20f552f8717ed1dd84b0b7e63e715
+  sonect-idenfy-kyc-plugin: 35745b03b586ba5741beef51da3def7b5a6c3993
+  sonect-scandit-scan-plugin: 9db98738c5a44615dd337edaf5d1f605061d5d63
+  sonect-shop-sdk-ios: 2022e43aba52d2611ac84040cc4887efd6fcbbc1
+  ZIPFoundation: b1f0de4eed33e74a676f76e12559ab6b75990197
 
-PODFILE CHECKSUM: 19947e98769f2d41a36260cbc8aed4995eddd5d1
+PODFILE CHECKSUM: 89d54bd3c3ae4d907b1ea2caace53524a67d2bab
 
 COCOAPODS: 1.9.1

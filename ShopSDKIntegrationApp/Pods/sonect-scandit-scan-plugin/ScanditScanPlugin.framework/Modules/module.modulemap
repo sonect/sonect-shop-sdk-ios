@@ -1,6 +1,0 @@
-framework module ScanditScanPlugin {
-  umbrella header "ScanditScanPlugin.h"
-
-  export *
-  module * { export * }
-}
