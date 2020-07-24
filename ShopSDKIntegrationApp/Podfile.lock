@@ -24,7 +24,7 @@ PODS:
   - sonect-idenfy-kyc-plugin (1.0.4):
     - iDenfySDK/iDenfyLiveness
     - sonect-core-ios
-  - sonect-scandit-scan-plugin (1.0.5)
+  - sonect-scandit-scan-plugin (1.0.6)
   - sonect-shop-sdk-ios (1.3.3)
   - ZIPFoundation (0.9.11)
 
@@ -63,7 +63,7 @@ SPEC CHECKSUMS:
   sonect-core-ios: 9ba5b8b2344111c90f4cda57b63489947a3ec07d
   sonect-google-address-autocompletion-plugin: dc68ed648ca20f552f8717ed1dd84b0b7e63e715
   sonect-idenfy-kyc-plugin: 35745b03b586ba5741beef51da3def7b5a6c3993
-  sonect-scandit-scan-plugin: 9db98738c5a44615dd337edaf5d1f605061d5d63
+  sonect-scandit-scan-plugin: 7efb4de562afb500e15e2dc3a15167310695af3c
   sonect-shop-sdk-ios: 2022e43aba52d2611ac84040cc4887efd6fcbbc1
   ZIPFoundation: b1f0de4eed33e74a676f76e12559ab6b75990197
 
