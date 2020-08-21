@@ -8,31 +8,21 @@
 
 import UIKit
 import SonectShop
-
-// TODO: Implement your own scanner
-class ScanPlugin: NSObject, SNCScanCodePlugin {
-    func viewController() -> UIViewController {
-        return UIViewController()
-    }
-    
-    func scan(_ handler: @escaping SNCScanCodeResultHandler) {
-    }
-    
-    func stop() {
-    }
-}
+import sonect_idenfy_kyc_plugin
+import GoogleAddressAutocompletionPlugin
+import ScanditScanPlugin
 
 class ViewController: UIViewController {
 
     @IBAction func openSdk(_ sender: Any) {
-        let configuration = SNCConfiguration.default()
-        
-        // TODO: Obtain an SDK token from a web service
-        let sdkToken = "_SDK_TOKEN_"
-        let credentials = SNCShopCredentials(sdkToken: sdkToken)
-        let scanPlugin = ScanPlugin()
-        SNCSonectShop.scanCodePlugin = scanPlugin
+        let configuration = SNCShopConfiguration.default()
+        let credentials = SNCShopCredentials(sdkToken: "_SDK_TOKEN_",
+                                             merchantId: "_MERCHANT_ID_",
+                                             signature: "_SIGNATURE_",
+                                             deviceId: "_DEVICE_ID")
+        SNCSonectShop.scanCodePlugin = SNCScanditScanPlugin(licenseKey: "_SCANDIT_KEY_")
+        SNCSonectShop.kycProviderPlugin = IdenfyKycProviderPlugin()
+        SNCSonectShop.addressAutocompletionPlugin = SNCGoogleAddressAutocompletionPlugin(apiKey: "_GOOGLE_API_KEY_")
         SNCSonectShop.present(with: credentials, configuration: configuration, presenting: self)
     }
 }
-

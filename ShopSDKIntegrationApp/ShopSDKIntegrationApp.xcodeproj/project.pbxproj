@@ -13,7 +13,7 @@
 		04DA17B723F5A40B002431AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DA17B523F5A40B002431AE /* Main.storyboard */; };
 		04DA17B923F5A40D002431AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DA17B823F5A40D002431AE /* Assets.xcassets */; };
 		04DA17BC23F5A40D002431AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DA17BA23F5A40D002431AE /* LaunchScreen.storyboard */; };
-		04DA17C423F5A5DC002431AE /* SonectConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04DA17C323F5A5DC002431AE /* SonectConfiguration.plist */; };
+		04DA17C423F5A5DC002431AE /* SonectShopConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04DA17C323F5A5DC002431AE /* SonectShopConfiguration.plist */; };
 		1F12CEC30EE2C6A39973FD20 /* Pods_ShopSDKIntegrationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D43E1C1832730E87F0389AEC /* Pods_ShopSDKIntegrationApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +26,7 @@
 		04DA17B823F5A40D002431AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04DA17BB23F5A40D002431AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04DA17BD23F5A40D002431AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04DA17C323F5A5DC002431AE /* SonectConfiguration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SonectConfiguration.plist; sourceTree = "<group>"; };
+		04DA17C323F5A5DC002431AE /* SonectShopConfiguration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SonectShopConfiguration.plist; sourceTree = "<group>"; };
 		62942F6F9B08F5FA324DF061 /* Pods-ShopSDKIntegrationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopSDKIntegrationApp.debug.xcconfig"; path = "Target Support Files/Pods-ShopSDKIntegrationApp/Pods-ShopSDKIntegrationApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D43E1C1832730E87F0389AEC /* Pods_ShopSDKIntegrationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopSDKIntegrationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B649D36182232F0CDE2C38 /* Pods-ShopSDKIntegrationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopSDKIntegrationApp.release.xcconfig"; path = "Target Support Files/Pods-ShopSDKIntegrationApp/Pods-ShopSDKIntegrationApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 				04DA17B823F5A40D002431AE /* Assets.xcassets */,
 				04DA17BA23F5A40D002431AE /* LaunchScreen.storyboard */,
 				04DA17BD23F5A40D002431AE /* Info.plist */,
-				04DA17C323F5A5DC002431AE /* SonectConfiguration.plist */,
+				04DA17C323F5A5DC002431AE /* SonectShopConfiguration.plist */,
 			);
 			path = ShopSDKIntegrationApp;
 			sourceTree = "<group>";
@@ -157,7 +157,7 @@
 				04DA17BC23F5A40D002431AE /* LaunchScreen.storyboard in Resources */,
 				04DA17B923F5A40D002431AE /* Assets.xcassets in Resources */,
 				04DA17B723F5A40B002431AE /* Main.storyboard in Resources */,
-				04DA17C423F5A5DC002431AE /* SonectConfiguration.plist in Resources */,
+				04DA17C423F5A5DC002431AE /* SonectShopConfiguration.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +364,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ch.sonect.ShopSDKIntegrationApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.sonect.sdk.shop.integrationapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -383,7 +383,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ch.sonect.ShopSDKIntegrationApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.sonect.sdk.shop.integrationapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
