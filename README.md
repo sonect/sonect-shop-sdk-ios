@@ -82,6 +82,8 @@ Sample `SonectShopConfiguration.plist` values:
 	<string>ch</string>
 	<key>SonectCurrency</key>
 	<string>CHF</string>
+	<key>SonectShouldShowPaymentId</key>
+	<true/>
 	<key>SonectAllowedCountryCodes</key>
 	<array>
 		<integer>41</integer>
