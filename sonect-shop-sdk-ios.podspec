@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "sonect-shop-sdk-ios"
-  spec.version      = "1.8.1"
+  spec.version      = "1.8.3"
   spec.summary      = "Sonect Shop SDK"
   spec.description  = <<-DESC
   This is the Sonect Shop SDK public podspec. 
