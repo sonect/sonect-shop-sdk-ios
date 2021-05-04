@@ -110,3 +110,5 @@ theme.navigationBarTintColor = UIColor.yellowColor;
 theme.navigationBarTitleImage = [UIImage imageNamed:@"rba"];
 [theme set];
 ```
+
+![](https://github.com/sonect/sonect-shop-sdk-ios/blob/master/misc/shop_theme_samples.png)
