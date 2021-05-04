@@ -1,4 +1,4 @@
-# Sonect Shop SDK for iOS [PRELIMINARY]
+# Sonect Shop SDK for iOS
 
 In this document we will go through the necessary steps to integrate
 Sonect Shop SDK in your iOS app. 
