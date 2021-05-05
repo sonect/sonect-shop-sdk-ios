@@ -92,6 +92,16 @@ Sample `SonectShopConfiguration.plist` values:
 </dict>
 ```
 
+### Passing arbitrary shop attributes
+
+If you need to pass arbitrary shop attributes i.e. a VAT number, then you can use Shop Attributes structure to do so. 
+
+```objc
+SNCShopConfiguration *configuration = ... //YOUR_CONFIGURATION
+SNCShopAttributes *attributes = [SNCShopAttributes attributesByAddingData: @{ @"VAT": @"123456789"}];
+configuration.shopAttributes = attributes;
+```
+
 ### Themes
 
 Sonect SDK supports theming colors and fonts to allow you to customize the SDK, so that it looks and feels right when embedded in your app. To apply a theme, you need to create a new `SNCTheme` object and apply a theme like in the following example. 
