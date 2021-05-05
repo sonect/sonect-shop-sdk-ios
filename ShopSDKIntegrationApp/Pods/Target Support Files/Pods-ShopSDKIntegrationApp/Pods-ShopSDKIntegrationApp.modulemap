@@ -1,0 +1,6 @@
+framework module Pods_ShopSDKIntegrationApp {
+  umbrella header "Pods-ShopSDKIntegrationApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

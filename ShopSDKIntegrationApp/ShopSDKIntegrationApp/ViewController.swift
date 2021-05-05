@@ -16,10 +16,10 @@ class ViewController: UIViewController {
 
     @IBAction func openSdk(_ sender: Any) {
         let configuration = SNCShopConfiguration.default()
-        let credentials = SNCShopCredentials(sdkToken: "_SDK_TOKEN_",
-                                             merchantId: "_MERCHANT_ID_",
-                                             signature: "_SIGNATURE_",
-                                             deviceId: "_DEVICE_ID")
+        let credentials = SNCShopCredentials(sdkToken: "N2QwYmQ2ZjAtODdmNC0xMWViLTg0NTUtYmI5MmQ4YjgzNjk1OjFhOTE4OWY2NDE0NDM1YTNiZjg0Y2U5Njc3ZDc0OTQ1ZmI2OTM1ZWVhMjZkYzg2MzQwYjg1MmQzZjEzYzIxYWY=",
+                                             merchantId: "Merchant",
+                                             signature: "3vZGmZqYnZfUDUzC0em/SpdRPLXM99Z/+vZ0C1hm+lM=",
+                                             deviceId: "1")
         SNCSonectShop.scanCodePlugin = SNCScanditScanPlugin(licenseKey: "_SCANDIT_KEY_")
         SNCSonectShop.kycProviderPlugin = IdenfyKycProviderPlugin()
         SNCSonectShop.addressAutocompletionPlugin = SNCGoogleAddressAutocompletionPlugin(apiKey: "_GOOGLE_API_KEY_")
