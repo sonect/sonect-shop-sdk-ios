@@ -84,11 +84,6 @@ Sample `SonectShopConfiguration.plist` values:
 	<string>CHF</string>
 	<key>SonectShouldShowPaymentId</key>
 	<true/>
-	<key>SonectAllowedCountryCodes</key>
-	<array>
-		<integer>41</integer>
-		<integer>1</integer>
-	</array>
 </dict>
 ```
 
