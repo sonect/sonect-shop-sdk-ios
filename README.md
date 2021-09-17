@@ -77,16 +77,16 @@ SNCSonectShop.addressAutocompletionPlugin = plugin;
 
 The Sonect Shop SDK allows you to use your barcode scanning SDK, by implementing a simple `SNCScanCodePlugin` protocol, and plugging it in the Sonect Shop SDK.
 
-### Obj-C
-```objc
-id <SNCScanCodePlugin> scanPlugin = [MyScanCodePlugin new];
-SNCSonectShop.scanCodePlugin = scanPlugin;
-```
-
 ### Swift
 ```swift
 let scanPlugin = MyScanCodePlugin()
 SNCSonectShop.scanCodePlugin = scanPlugin
+```
+
+### Obj-C
+```objc
+id <SNCScanCodePlugin> scanPlugin = [MyScanCodePlugin new];
+SNCSonectShop.scanCodePlugin = scanPlugin;
 ```
 
 Optimally, for best barcode and QR code scanning experience, Sonect has partnered with Scandit, so you can also use the [Scandit Plugin](https://github.com/sonect/sonect-scandit-scan-plugin). Sonect will provide additional details for integration.
