@@ -134,8 +134,9 @@ If you need to pass arbitrary shop attributes i.e. a VAT number, then you can us
 ### Swift
 ```swift
 let configuration = ... //YOUR_CONFIGURATION
-let attributes = SNCShopAttributes(dictionary: {"VAT":"123456789"})
-SNCSonectShop.addressAutocompletionPlugin = addressAutocompletionPlugin
+var attributes = SNCShopAttributes()
+attributes = attributes.addingData({"VAT":"123456789"})
+configuration.shopAttributes = attributes
 ```
 
 ### Obj-C
