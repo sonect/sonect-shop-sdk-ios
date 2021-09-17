@@ -37,7 +37,7 @@ SNCSonectShop.scanCodePlugin = scanPlugin
 let kycPlugin = MyKycProviderPlugin()
 SNCSonectShop.kycProviderPlugin = kycPlugin
 
-//In order to add address autocompletion use Google Autocompletion, or implemnent your own.
+//In order to add address autocompletion use Google Autocompletion, or implement your own.
 let addressAutocompletionPlugin = MyAddressAutocompletionPlugin()
 SNCSonectShop.addressAutocompletionPlugin = addressAutocompletionPlugin
 
