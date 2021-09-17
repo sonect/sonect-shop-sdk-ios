@@ -48,6 +48,30 @@ SNCSonectShop.addressAutocompletionPlugin = plugin;
              presentingViewController:self.viewController];
 ```
 
+```swift
+//Some of the credentials can be aquired from Sonect panel, others are merchant specific
+let credentials = SNCShopCredentials(sdkToken: _SHOP_SDK_TOKEN_, merchantId:_YOUR_MERCHANT_ID_, signature:_PARTNER_SIGNATURE_,  deviceId:_YOUR_DEVICE_ID_)
+
+//Create configuration using SonectShopConfiguration.plist, alternatively use SNCShopConfiguration(contentsOfFile:):
+let configuration = SNCShopConfiguration.default()
+
+//In order to scan the barcodes, you need to set your preferred scanning plugin, or implement your own
+let scanPlugin = MyScanCodePlugin()
+SNCSonectShop.scanCodePlugin = scanPlugin
+
+//In order to check user's KYC, use a Idenfy KYC plugin or implement your own.  
+let kycPlugin = MyKycProviderPlugin()
+SNCSonectShop.kycProviderPlugin = kycPlugin
+
+//In order to add address autocompletion use Google Autocompletion, or implemnent your own.
+let addressAutocompletionPlugin = MyAddressAutocompletionPlugin()
+SNCSonectShop.addressAutocompletionPlugin = addressAutocompletionPlugin
+
+//Present the shop interface on top of your app. 
+SNCSonectShop.present(with: credentials, configuration: configuration, presenting: viewController)
+
+```
+
 ### Barcode scanning
 
 The Sonect Shop SDK allows you to use your barcode scanning SDK, by implementing a simple `SNCScanCodePlugin` protocol, and plugging it in the Sonect Shop SDK.
