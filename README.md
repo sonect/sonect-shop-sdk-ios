@@ -19,9 +19,34 @@ Minimum version: iOS 9.0+
 
 The main entry point to the SDK is `SNCSonectShop` object. To present the Sonect view controller, you have to obtain the SDK token, the user ID and the signature, which **must** be calculated on your bank's serverside for security reasons.  
 
-## Obj-C
-
 ### Simple SDK Integration 
+
+### Swift
+```swift
+//Some of the credentials can be aquired from Sonect panel, others are merchant specific
+let credentials = SNCShopCredentials(sdkToken: _SHOP_SDK_TOKEN_, merchantId:_YOUR_MERCHANT_ID_, signature:_PARTNER_SIGNATURE_,  deviceId:_YOUR_DEVICE_ID_)
+
+//Create configuration using SonectShopConfiguration.plist, alternatively use SNCShopConfiguration(contentsOfFile:):
+let configuration = SNCShopConfiguration.default()
+
+//In order to scan the barcodes, you need to set your preferred scanning plugin, or implement your own
+let scanPlugin = MyScanCodePlugin()
+SNCSonectShop.scanCodePlugin = scanPlugin
+
+//In order to check user's KYC, use a Idenfy KYC plugin or implement your own.  
+let kycPlugin = MyKycProviderPlugin()
+SNCSonectShop.kycProviderPlugin = kycPlugin
+
+//In order to add address autocompletion use Google Autocompletion, or implemnent your own.
+let addressAutocompletionPlugin = MyAddressAutocompletionPlugin()
+SNCSonectShop.addressAutocompletionPlugin = addressAutocompletionPlugin
+
+//Present the shop interface on top of your app. 
+SNCSonectShop.present(with: credentials, configuration: configuration, presenting: viewController)
+
+```
+
+### Obj-C
 ```objc
 SNCShopCredentials *credentials = [[SNCShopCredentials alloc] initWithSdkToken:_SHOP_SDK_TOKEN_
 								    merchantId:_YOUR_MERCHANT_ID_
@@ -48,36 +73,20 @@ SNCSonectShop.addressAutocompletionPlugin = plugin;
              presentingViewController:self.viewController];
 ```
 
-```swift
-//Some of the credentials can be aquired from Sonect panel, others are merchant specific
-let credentials = SNCShopCredentials(sdkToken: _SHOP_SDK_TOKEN_, merchantId:_YOUR_MERCHANT_ID_, signature:_PARTNER_SIGNATURE_,  deviceId:_YOUR_DEVICE_ID_)
-
-//Create configuration using SonectShopConfiguration.plist, alternatively use SNCShopConfiguration(contentsOfFile:):
-let configuration = SNCShopConfiguration.default()
-
-//In order to scan the barcodes, you need to set your preferred scanning plugin, or implement your own
-let scanPlugin = MyScanCodePlugin()
-SNCSonectShop.scanCodePlugin = scanPlugin
-
-//In order to check user's KYC, use a Idenfy KYC plugin or implement your own.  
-let kycPlugin = MyKycProviderPlugin()
-SNCSonectShop.kycProviderPlugin = kycPlugin
-
-//In order to add address autocompletion use Google Autocompletion, or implemnent your own.
-let addressAutocompletionPlugin = MyAddressAutocompletionPlugin()
-SNCSonectShop.addressAutocompletionPlugin = addressAutocompletionPlugin
-
-//Present the shop interface on top of your app. 
-SNCSonectShop.present(with: credentials, configuration: configuration, presenting: viewController)
-
-```
-
 ### Barcode scanning
 
 The Sonect Shop SDK allows you to use your barcode scanning SDK, by implementing a simple `SNCScanCodePlugin` protocol, and plugging it in the Sonect Shop SDK.
+
+### Obj-C
 ```objc
 id <SNCScanCodePlugin> scanPlugin = [MyScanCodePlugin new];
 SNCSonectShop.scanCodePlugin = scanPlugin;
+```
+
+### Swift
+```swift
+let scanPlugin = MyScanCodePlugin()
+SNCSonectShop.scanCodePlugin = scanPlugin
 ```
 
 Optimally, for best barcode and QR code scanning experience, Sonect has partnered with Scandit, so you can also use the [Scandit Plugin](https://github.com/sonect/sonect-scandit-scan-plugin). Sonect will provide additional details for integration.
@@ -90,6 +99,13 @@ The Sonect Shop SDK allows you to use Idenfy as the KYC check provider. Integrat
 
 With Sonect Shop SDK allows you can use Google autocompletion as the default address autocompletion plugin. Integrate the [Sonect Google Address Autocompletion Plugin](https://github.com/sonect/sonect-google-address-autocompletion-plugin) as described in the repository README page. If your company does not allow the usage of Google API-s you can roll your own autocomplete solution by implementing the `SNCAddressAutocompletionPlugin` protocol, and assigning it to the Sonect Shop SDK like so 
 
+### Swift
+```swift
+let addressAutocompletionPlugin = MyAddressAutocompletionPlugin()
+SNCSonectShop.addressAutocompletionPlugin = addressAutocompletionPlugin
+```
+
+### Obj-C
 ```objc
 id <SNCAddressAutocompletionPlugin> plugin = [MyAddressAutocompletionPlugin new];
 SNCSonectShop.addressAutocompletionPlugin = plugin;
@@ -115,6 +131,14 @@ Sample `SonectShopConfiguration.plist` values:
 
 If you need to pass arbitrary shop attributes i.e. a VAT number, then you can use Shop Attributes structure to do so. 
 
+### Swift
+```swift
+let configuration = ... //YOUR_CONFIGURATION
+let attributes = SNCShopAttributes(dictionary: {"VAT":"123456789"})
+SNCSonectShop.addressAutocompletionPlugin = addressAutocompletionPlugin
+```
+
+### Obj-C
 ```objc
 SNCShopConfiguration *configuration = ... //YOUR_CONFIGURATION
 SNCShopAttributes *attributes = [SNCShopAttributes attributesByAddingData: @{ @"VAT": @"123456789"}];
@@ -125,6 +149,23 @@ configuration.shopAttributes = attributes;
 
 Sonect SDK supports theming colors and fonts to allow you to customize the SDK, so that it looks and feels right when embedded in your app. To apply a theme, you need to create a new `SNCTheme` object and apply a theme like in the following example. 
 
+### Swift
+```swift
+let theme = SNCTheme()
+theme.type = .dark
+theme.fontName = "Arial"
+theme.boldFontName = "Arial-Bold"
+theme.detailColor1 = .yellow
+theme.detailColor2 = .yellow
+theme.detailColor3 = .yellow
+theme.detailColor4 = .yellow
+theme.detailColor5 = .yellow
+theme.navigationBarTintColor = .yellow
+theme.navigationBarTitleImage = UIImage(named: "rba")
+theme.selectedAmountColors = [theme1.detailColor1!, theme1.detailColor2!, theme1.detailColor3!, theme1.detailColor4!]
+```
+
+### Obj-C
 ```objc
 SNCTheme *theme = [SNCTheme new];
 theme.type = SNCThemeTypeLight;
