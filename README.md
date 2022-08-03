@@ -161,10 +161,12 @@ func sonectShop(_ shop: SNCSonectShop, handleEvent event: String, withParameters
 ```
 your event handler class will receive events when certain actions happen in Sonect Shop SDK.
 
-Event "shop_terms_and_condition_signed" is send when user clicks "Continue" button on following screen:
+Event `shop_terms_and_condition_signed` is send when user clicks "Continue" button on following screen:
+
 ![terms_and_conditions_toaster.png](/terms_and_conditions_toaster.png)
 
-Event "shop_onboarding_completed" is send when user reaches this screen:
+Event `shop_onboarding_completed` is send when user reaches this screen:
+
 ![registration_completed_screen.png](/registration_completed_screen.png)
 
 ## Themes
