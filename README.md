@@ -157,7 +157,7 @@ SNCSonectShop.eventHandler = MySonectShopEventHandler()
 In the following method:
 ```swift
 func sonectShop(_ shop: SNCSonectShop, handleEvent event: String, withParameters parameters: [AnyHashable : Any]?) {
-    }
+}
 ```
 your event handler class will receive events when certain actions happen in Sonect Shop SDK.
 
