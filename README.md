@@ -19,7 +19,7 @@ Minimum version: iOS 9.0+
 
 The main entry point to the SDK is `SNCSonectShop` object. To present the Sonect view controller, you have to obtain the SDK token, the user ID and the signature, which **must** be calculated on your bank's serverside for security reasons.  
 
-### Simple SDK Integration 
+## Simple SDK Integration 
 
 ### Swift
 ```swift
@@ -73,7 +73,7 @@ SNCSonectShop.addressAutocompletionPlugin = plugin;
              presentingViewController:self.viewController];
 ```
 
-### Barcode scanning
+## Barcode scanning
 
 The Sonect Shop SDK allows you to use your barcode scanning SDK, by implementing a simple `SNCScanCodePlugin` protocol, and plugging it in the Sonect Shop SDK.
 
@@ -91,11 +91,11 @@ SNCSonectShop.scanCodePlugin = scanPlugin;
 
 Optimally, for best barcode and QR code scanning experience, Sonect has partnered with Scandit, so you can also use the [Scandit Plugin](https://github.com/sonect/sonect-scandit-scan-plugin). Sonect will provide additional details for integration.
 
-### KYC Check
+## KYC Check
 
 The Sonect Shop SDK allows you to use Idenfy as the KYC check provider. Integrate the [Idenfy KYC Plugin](https://github.com/sonect/sonect-idenfy-kyc-plugin) as described in the repository README page to get the benefits of Idenfy scanning. Sonect will provide additional details for integration.
 
-### Address Autocompletion
+## Address Autocompletion
 
 With Sonect Shop SDK allows you can use Google autocompletion as the default address autocompletion plugin. Integrate the [Sonect Google Address Autocompletion Plugin](https://github.com/sonect/sonect-google-address-autocompletion-plugin) as described in the repository README page. If your company does not allow the usage of Google API-s you can roll your own autocomplete solution by implementing the `SNCAddressAutocompletionPlugin` protocol, and assigning it to the Sonect Shop SDK like so 
 
@@ -127,7 +127,7 @@ Sample `SonectShopConfiguration.plist` values:
 </dict>
 ```
 
-### Passing arbitrary shop attributes
+## Passing arbitrary shop attributes
 
 If you need to pass arbitrary shop attributes i.e. a VAT number, then you can use Shop Attributes structure to do so. 
 
@@ -146,7 +146,28 @@ SNCShopAttributes *attributes = [SNCShopAttributes attributesByAddingData: @{ @"
 configuration.shopAttributes = attributes;
 ```
 
-### Themes
+## Events
+
+If you have set up event handler, i.e:
+
+```swift
+SNCSonectShop.eventHandler = MySonectShopEventHandler()
+```
+
+In the following method:
+```swift
+func sonectShop(_ shop: SNCSonectShop, handleEvent event: String, withParameters parameters: [AnyHashable : Any]?) {
+    }
+```
+your event handler class will receive events when certain actions happen in Sonect Shop SDK.
+
+Event "shop_terms_and_condition_signed" is send when user clicks "Continue" button on following screen:
+![terms_and_conditions_toaster.png](/terms_and_conditions_toaster.png)
+
+Event "shop_onboarding_completed" is send when user reaches this screen:
+![registration_completed_screen.png](/registration_completed_screen.png)
+
+## Themes
 
 Sonect SDK supports theming colors and fonts to allow you to customize the SDK, so that it looks and feels right when embedded in your app. To apply a theme, you need to create a new `SNCTheme` object and apply a theme like in the following example. 
 
