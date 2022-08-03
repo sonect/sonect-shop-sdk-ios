@@ -148,7 +148,7 @@ configuration.shopAttributes = attributes;
 
 ## Events
 
-If you have set up event handler, i.e:
+If you have set up event handler, for example:
 
 ```swift
 SNCSonectShop.eventHandler = MySonectShopEventHandler()
