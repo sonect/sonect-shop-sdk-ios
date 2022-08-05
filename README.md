@@ -167,6 +167,7 @@ Event `shop_terms_and_condition_signed` is send when user agrees to Terms and Co
 
 Note: This screen could be disabled by your partner configuration on our admin panel, which would result in this event not firing.
 
+
 Event `shop_onboarding_completed` is send when user has completed onboarding process and is presented with this screen:
 
 ![registration_completed_screen.png](/registration_completed_screen.png)
