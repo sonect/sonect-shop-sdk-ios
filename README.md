@@ -148,7 +148,7 @@ configuration.shopAttributes = attributes;
 
 ## Events
 
-If you have set up event handler, i.e:
+If you have set up event handler, for example:
 
 ```swift
 SNCSonectShop.eventHandler = MySonectShopEventHandler()
@@ -157,14 +157,19 @@ SNCSonectShop.eventHandler = MySonectShopEventHandler()
 In the following method:
 ```swift
 func sonectShop(_ shop: SNCSonectShop, handleEvent event: String, withParameters parameters: [AnyHashable : Any]?) {
-    }
+}
 ```
 your event handler class will receive events when certain actions happen in Sonect Shop SDK.
 
-Event "shop_terms_and_condition_signed" is send when user clicks "Continue" button on following screen:
+Event `shop_terms_and_condition_signed` is send when user agrees to Terms and Conditions and taps "Continue" button on following screen:
+
 ![terms_and_conditions_toaster.png](/terms_and_conditions_toaster.png)
 
-Event "shop_onboarding_completed" is send when user reaches this screen:
+Note: This screen could be disabled by your partner configuration on our admin panel, which would result in this event not firing.
+
+
+Event `shop_onboarding_completed` is send when user has completed onboarding process and is presented with this screen:
+
 ![registration_completed_screen.png](/registration_completed_screen.png)
 
 ## Themes
