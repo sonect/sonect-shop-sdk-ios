@@ -19,6 +19,6 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
   spec.source       = { :http => "https://github.com/sonect/sonect-shop-sdk-ios/releases/download/#{spec.version}/SonectShopSDK_Cocoapods.framework.zip" }
   spec.ios.vendored_frameworks = 'SonectShop.xcframework'
-  spec.dependency 'sonect-core-ios', '~> 1.5.2'
+  spec.dependency 'sonect-core-sdk-ios'
 
 end
